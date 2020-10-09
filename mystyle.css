@@ -68,3 +68,73 @@ body {
   65% {right:125px;}
   100% {right:115px;}
 }
+body {
+  background: blue;
+}
+
+#container {
+  height: 300px;
+  width: 300px;
+  background: white;
+  margin: 0 auto;
+  position: relative;
+}
+#reddot {
+  height: 50px;
+  length: 10px;
+  width: 50px;
+  background: red;
+  position: absolute;
+  top: 125px;
+  left: 125px;
+  border-radius: 50px;
+  animation-play-state: inherit;
+}
+#hourhand {
+  height: 50px;
+  length: 10px;
+  width: 50px;
+  background: black;
+  position: absolute;
+  top: 125px;
+  left: 125px;
+  border-radius: 70px;
+  animation-play-state: paused;
+  animation-duration: 4s;
+  animation-play-state: inherit;
+  animation-name: hourhand;
+  animation-iteration-count: infinite;
+}
+@keyframes hourhand {
+  0% {left:115px;}
+  5% {left:125px;}
+  30% {left:125px;}
+  35% {left:115px;}
+  60% {left:125px;}
+  65% {left:125px;}
+  100% {left:115px;}
+}
+#hourhand2 {
+  height: 50px;
+  length: 10px;
+  width: 50px;
+  background: white;
+  position: absolute;
+  top: 125px;
+  left: 125px;
+  border-radius: 70px;
+  animation-play-state: paused;
+  animation-duration: 4s;
+  animation-play-state: inherit;
+  animation-name: hourhand2;
+  animation-iteration-count: infinite;
+}
+@keyframes hourhand2 {
+  0% {right:115px;}
+  5% {right:125px;}
+  30% {right:125px;}
+  35% {right:115px;}
+  60% {right:125px;}
+  65% {right:125px;}
+  100% {right:115px;}
+}

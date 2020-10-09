@@ -1,121 +1,70 @@
 body {
-  background: linear-gradient(
-    to bottom,
-    #5d9634;
-    #5d9634 50%;
-    #538c2b 50%;
-    #538c2b;
-)
-
-background-size: 100% 20px;
+  background: blue;
 }
 
-#anything {
-  position: relative;
-  margin: 0 auto;
-  top: 150px;
+#container {
   height: 300px;
   width: 300px;
-  background: #fff;
-}
-
-#skull {
-  position: absolute;
-  left: 50px;
-  top: 50px;
-  width: 200px;
-  height: 200px;
-  background: pink;
-  animation-play-state: paused;
-}
-
-#eye {
-  position: absolute;
-  left: 25px;
-  top: 40px;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  background: #000;
-  animation-play-state: inherit;
-}
-
-#bone-rect {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 400px;
-  height: 50px;
-  background: #ccc;
-}
-
-#bone-knob{
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 50px;
-  background: #ccc;
-}
-
-.knob-loc {
-  left: -25px;
-  top: -25px;
-}
-
-.knob-loc2 {
-  left: 375px;
-  top: 25px;
-}
-
-.knob-loc3 {
-  left: 375px;
-  top: -25px:
-}
-
-.knob-lock4 {
-  left: -25px;
-  top: 25px;
-}
-
-#bone {
+  background: white;
+  margin: 0 auto;
   position: relative;
 }
-
-.bone {
-  transform: rotate(30deg);
-  top: 75px;
-  left: -32.5px;
-}
-
-.bone2 {
-  transform: rotate(-30deg);
-  top: 125px;
-  left: -52.5px;
-}
-#pupil {
+#reddot {
+  height: 50px;
+  length: 10px;
+  width: 50px;
+  background: red;
   position: absolute;
-  left: 20px;
-  top: 20px;
-  width: 10px;
-  height: 10px;
-  border-radius: 10px;
-  background: #fff;
-  animation-name: look-about;
-  animation-duration: 3s;
+  top: 125px;
+  left: 125px;
+  border-radius: 50px;
   animation-play-state: inherit;
+}
+#hourhand {
+  height: 50px;
+  length: 10px;
+  width: 50px;
+  background: black;
+  position: absolute;
+  top: 125px;
+  left: 125px;
+  border-radius: 70px;
+  animation-play-state: paused;
+  animation-duration: 4s;
+  animation-play-state: inherit;
+  animation-name: hourhand;
   animation-iteration-count: infinite;
 }
-
-@keyframes look-about {
-  0% {left:20px;}
-  5% {left:30px;}
-  30% {left:30px;}
-  35% {left:10px;}
-  60% {left:10px;}
-  65% {left:20px;}
-  100% {left:20px;}
+@keyframes hourhand {
+  0% {left:115px;}
+  5% {left:125px;}
+  30% {left:125px;}
+  35% {left:115px;}
+  60% {left:125px;}
+  65% {left:125px;}
+  100% {left:115px;}
 }
-
-#skull:hover {
-  animation-play-state: running;
+#hourhand2 {
+  height: 50px;
+  length: 10px;
+  width: 50px;
+  background: white;
+  position: absolute;
+  top: 125px;
+  left: 125px;
+  border-radius: 70px;
+  animation-play-state: paused;
+  animation-duration: 4s;
+  animation-play-state: inherit;
+  animation-name: hourhand2;
+  animation-iteration-count: infinite;
+}
+@keyframes hourhand2 {
+  0% {right:115px;}
+  5% {right:125px;}
+  30% {right:125px;}
+  35% {right:115px;}
+  60% {right:125px;}
+  65% {right:125px;}
+  100% {right:115px;}
 }
